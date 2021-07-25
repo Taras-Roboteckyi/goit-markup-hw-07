@@ -1,0 +1,33 @@
+/*--Логотип сайту(Шапка сайту)--*/
+%logo {
+  font-family: var(--secondary-font);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  color: #000000;
+}
+
+.logo {
+  @extend %logo;
+  margin-right: 93px;
+  animation-duration: 500ms;
+}
+
+.logo__item {
+  color: var(--accent-color);
+}
+
+/*-- Логотип сайту (Підвал) --*/
+.footer-logo {
+  @extend %logo;
+  display: block;
+  margin-bottom: 20px;
+
+  color: var(--primary-white-color);
+
+  & .logo__item {
+    color: var(--accent-color);
+  }
+}
